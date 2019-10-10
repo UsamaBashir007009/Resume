@@ -65,25 +65,16 @@
     <string name="twitter_title">Twitter</string>
     <string name="stack_overflow_title">Stack Overflow</string>
     <string name="github_title">Github</string>
-    <string name="Metric_degree_title">Metric</string>
-    <string name="school_name">Central Model school</string>
-    <string name="intermediate_title">Bachelors of Science in IT (BSIT)</string>
-    <string name="college_title">Punjab University College of Information Technology</string>
-    <string name="graduation_title">Master of Science in CS (MSCS) </string>
-    <string name="university_title">National University of Computer and Emerging Sciences</string>
     <string name="degree_title1">IEEE</string>
     <string name="degree_title2">Degree Title</string>
     <string name="degree_title3">Degree Title</string>
-    <string name="school_year">(2014)</string>
-    <string name="college_year">(2008 – 2012)</string>
-    <string name="university_year">(2013 – 2016)</string>
     <string name="Cgpa"></string>
     <string name="certification_courses_title">Publications</string>
     <string name="institute_title">A parametric effort estimation model for mobile apps</string>
     <string name="institute_year">(2016)</string>
     <string name="grades">(grades)</string>
     <string name="institute_title1">Institute Title</string>
-    <string name="institude_year1">(year)</string>
+
     <string name="grades1">(grades)</string>
     <string name="institute_title2">Institute Title</string>
     <string name="institute_year2">(year)</string>
@@ -98,13 +89,10 @@
     <string name="why_i_did_choose_above_title_1">Why did I choose to teach:</string>
     <string name="why_i_did_choose_work_2">"\u2713" Teaching does not finish when we give our students the information, it can be acquired from many sources, but the ability to think, reason and criticize can only be incorporated if we foster and encourage them through thick and thin.</string>
     <string name="why_i_did_choose_work_3">"\u2713" Client based company, so considering the requirements from clients and keeping in point latest technology at that time I used above technology stack. </string>
-    <string name="company_name1">YumyApps Pvt Ltd</string>
-    <string name="experience_time1">November 2016 - October (3 years)</string>
-    <string name="worked_on_title">Worked On:</string>
-    <string name="company_name2">National University of Computer and Emerging Sciences</string>
-    <string name="experience_time2">August 2018 - December 2019 (~1.5 years)</string>
+
+
     <string name="worked_on2">Worked On:</string>
-    <string name="company_name3">MobilezApp inc</string>
+
     <string name="experience_time3">August 2012 - January 2014 (1.6 years)</string>
     <string name="worked_on3">Worked On:</string>
 
