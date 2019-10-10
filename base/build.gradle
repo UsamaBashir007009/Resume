@@ -35,6 +35,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation 'de.hdodenhof:circleimageview:3.0.1'
     implementation 'com.rhexgomez.typer:typer-roboto:2.0.0'
+    implementation 'com.android.support:recyclerview-v7:29.0.0'
     implementation 'com.squareup.picasso:picasso:2.71828'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
 }
