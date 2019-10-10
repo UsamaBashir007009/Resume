@@ -9,53 +9,68 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.ahmad.cv.Education_Item;
 import com.ahmad.cv.model.DemoItem;
 import com.ahmad.cv.base.R;
 
 import java.util.List;
-public class EducationAdapter extends RecyclerView.Adapter {
-    private List<DemoItem> demoItems;
-    private Context        context;
-    private ImageView education_publication_link;
 
-    public EducationAdapter(List<DemoItem> demoItems, Context context) {
-        this.demoItems   = demoItems;
+public class EducationAdapter extends RecyclerView.Adapter<EducationAdapter.DemoItemHolder>{
+    private List<Education_Item> education_items;
+    private Context        context;
+
+    public EducationAdapter(List<Education_Item> demoItems, Context context) {
+        this.education_items   = demoItems;
         this.context     = context;
     }
 
     @NonNull
     @Override
-    public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        LayoutInflater inflater = LayoutInflater.from(context);
-        View           row      = inflater.inflate(R.layout.education, parent, false);
-        education_publication_link  = row.findViewById(R.id.education_publication_link);
-        education_publication_link.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(context.getString(R.string.ieee_link)));
-                    context.startActivity(intent);
-                }
-        });
-        return new DemoItemHolder(row);
+    public DemoItemHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view;
+        view=LayoutInflater.from(context).inflate(R.layout.education,parent,false);
+        DemoItemHolder demoItemHolder=new DemoItemHolder(view);
+        return demoItemHolder;
     }
 
     @Override
-    public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-        DisplayMetrics displayMetrics = new DisplayMetrics();
-        ((Activity) context).getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
+    public void onBindViewHolder(@NonNull DemoItemHolder holder, int position) {
+
+        holder.tv_institute_name.setText(education_items.get(position).institute_name);
+        holder.tv_yearr.setText(education_items.get(position).year);
+        holder.tv_Degree_name.setText(education_items.get(position).Degree_name);
+        holder.im_Institue_Image.setImageResource(education_items.get(position).Institue_Image);
+
+        
     }
 
     @Override
     public int getItemCount() {
-        return demoItems.size();
+        return education_items.size();
     }
+
+
     public class DemoItemHolder extends RecyclerView.ViewHolder {
+
+        private TextView tv_institute_name;
+        private TextView tv_Degree_name;
+        private TextView tv_yearr;
+        private ImageView im_Institue_Image;
+
+
         DemoItemHolder(View itemView) {
             super(itemView);
+
+            tv_institute_name=(TextView) itemView.findViewById(R.id.textView7);
+            tv_Degree_name=(TextView) itemView.findViewById(R.id.textView5);
+            tv_yearr=(TextView) itemView.findViewById(R.id.textView8);
+            im_Institue_Image=(ImageView) itemView.findViewById(R.id.imageView2);
+
         }
     }
 }
