@@ -1,9 +1,9 @@
-package com.ahmad.cv.fragments;
+package com.usamaa.cv.fragments;
 import android.os.Bundle;
 
-import com.ahmad.cv.model.DemoItem;
-import com.ahmad.cv.adapters.ProfessionAdapter;
-import com.ahmad.cv.base.R;
+import com.usamaa.cv.model.DemoItem;
+import com.usamaa.cv.adapters.ProfessionAdapter;
+import com.usamaa.cv.base.R;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;

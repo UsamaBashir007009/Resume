@@ -1,16 +1,14 @@
-package com.ahmad.cv.fragments;
+package com.usamaa.cv.fragments;
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.ahmad.cv.Education_Item;
-import com.ahmad.cv.model.DemoItem;
-import com.ahmad.cv.adapters.EducationAdapter;
-import com.ahmad.cv.base.R;
+import com.usamaa.cv.Education_Item;
+import com.usamaa.cv.adapters.EducationAdapter;
+import com.usamaa.cv.base.R;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -28,8 +26,8 @@ public class EducationFragment extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         listEducation=new ArrayList<>();
-        listEducation.add(new Education_Item("National University of Emerging and Computer Sciences","BS(CS)","(2008 – 2012)",R.drawable.fastlogo));
-        listEducation.add(new Education_Item("Kips College","FSc Pre Engineering","(2008 – 2012)",R.drawable.kips));
+        listEducation.add(new Education_Item("National University of Emerging and Computer Sciences","BS(CS)","(2017 – 2021)",R.drawable.fastlogo));
+        listEducation.add(new Education_Item("Kips College","FSc Pre Engineering","(2015 – 2017)",R.drawable.kips));
         listEducation.add(new Education_Item("Digiskills","SEO online course","(2019)",R.drawable.digi));
 
     }

@@ -1,4 +1,4 @@
-package com.ahmad.cv.adapters;
+package com.usamaa.cv.adapters;
 import android.app.Activity;
 import android.content.Context;
 import android.util.DisplayMetrics;
@@ -8,8 +8,8 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.ahmad.cv.model.DemoItem;
-import com.ahmad.cv.base.R;
+import com.usamaa.cv.model.DemoItem;
+import com.usamaa.cv.base.R;
 import java.util.List;
 public class ProfessionAdapter extends RecyclerView.Adapter {
     private List<DemoItem> demoItems;

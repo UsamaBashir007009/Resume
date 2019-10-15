@@ -1,4 +1,4 @@
-package com.ahmad.coordinatetabs;
+package com.usamaa.coordinatetabs;
 
 import org.junit.Test;
 
